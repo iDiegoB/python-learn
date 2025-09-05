@@ -1,3 +1,4 @@
+#manejo uso de comillas
 text = 'hola, python'
 text2 = "hola, python"
 

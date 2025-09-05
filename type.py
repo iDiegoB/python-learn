@@ -1,4 +1,4 @@
-
+#tipos de datos y su utilizacion en prints
 age: int = 40
 name = 'Andres'
 

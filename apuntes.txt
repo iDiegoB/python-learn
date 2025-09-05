@@ -1,0 +1,8 @@
+TODO EN Git Bash
+ACTUALIZAR REPOSITORIO CADA QUE CAMBIE ALGO
+git add .
+git commit -m "Descripción de lo que cambiaste"
+git push
+
+TRAER CAMBIOS DE GITHUB
+git pull
