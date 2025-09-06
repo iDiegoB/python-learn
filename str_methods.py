@@ -96,3 +96,27 @@ print("Hola, {nombre} {apellido}!".format(nombre="Diego", apellido="Barra"))
 #format_map con diccionario hace lo mismo que format con parametros
 print("Hola, {nombre} {apellido}!".format_map({"nombre": "Diego", "apellido": "Barra"}))
 print("Hola, {} {}!".format("Diego", "Barra"))
+
+text = 'Hola Diego como estas?'
+print(text.find('como'))
+print(text.index('como'))  # similar a find pero lanza error si no encuentra
+
+text = '     Hola Diego como estas?, estoy escribiendo codigo en Python    '
+text_clean = text.strip().capitalize().title()
+print(text_clean)
+
+new_text = text_clean.replace('Python', 'JavaScript')
+print(new_text)
+
+words = new_text.split()
+print(words)
+
+print('123'.isdecimal())  # ✅ True (solo dígitos 0-9)
+print('²³'.isdecimal())   # ❌ False (superíndices)
+
+print('123'.isdigit())    # ✅ True
+print('²³'.isdigit())     # ✅ True (superíndices permitidos)
+ 
+print('123'.isnumeric())  # ✅ True
+print('½'.isnumeric())    # ✅ True (fracción Unicode)
+print('Ⅷ'.isnumeric())    # ✅ True (número romano)
